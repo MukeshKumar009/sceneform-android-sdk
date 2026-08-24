@@ -1,0 +1,11 @@
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# Android Studio / IntelliJ IDEA
+.idea/
+**/.idea/
+*.iml
+
+# Local release archives
+sceneform-android-sdk-2.0.0.zip
