@@ -30,6 +30,24 @@ For an updated version supporting modern Android development, use Sceneform
 
 ## What's new and changed in Sceneform 2.0.0
 
+
+### Main changes
+
+* Merged `sceneformsrc` and `sceneformux` into the single `sceneform-nxt` module.
+* Added Kotlin source compilation and coroutine support.
+* Migrated the updated SDK and sample to AndroidX.
+* Added compatibility with Android API 36 and Java 17.
+* Updated ARCore and Filament integrations.
+* Added HDR and KTX environment-loading utilities.
+* Added asynchronous model and resource loading.
+* Updated glTF animation handling for Filament 1.70.1.
+* Modernized Gradle configuration and module namespaces.
+* Updated the glTF sample for the new module and APIs.
+
+### New features
+
+* Added a video node with rounded-corner support.
+
 ### Updated toolchain
 
 * Android Gradle Plugin: `8.10.1`
@@ -61,23 +79,6 @@ For an updated version supporting modern Android development, use Sceneform
 
 * Fuel: `2.3.1`
 * Fuel Coroutines: `2.3.1`
-
-### Main changes
-
-* Merged `sceneformsrc` and `sceneformux` into the single `sceneform-nxt` module.
-* Added Kotlin source compilation and coroutine support.
-* Migrated the updated SDK and sample to AndroidX.
-* Added compatibility with Android API 36 and Java 17.
-* Updated ARCore and Filament integrations.
-* Added HDR and KTX environment-loading utilities.
-* Added asynchronous model and resource loading.
-* Updated glTF animation handling for Filament 1.70.1.
-* Modernized Gradle configuration and module namespaces.
-* Updated the glTF sample for the new module and APIs.
-
-### New features
-
-* Added a video node with rounded-corner support.
 
 
 ## Getting started with Sceneform 2.0.0
