@@ -24,7 +24,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.ArraySet;
 import android.util.Log;
 import android.view.Gravity;
@@ -145,8 +145,9 @@ public class GltfActivity extends AppCompatActivity {
           model.select();
 
           FilamentAsset filamentAsset = model.getRenderableInstance().getFilamentAsset();
-          if (filamentAsset.getAnimator().getAnimationCount() > 0) {
-            animators.add(new AnimationInstance(filamentAsset.getAnimator(), 0, System.nanoTime()));
+          Animator animator = filamentAsset.getInstance().getAnimator();
+          if (animator.getAnimationCount() > 0) {
+            animators.add(new AnimationInstance(animator, 0, System.nanoTime()));
           }
 
           Color color = colors.get(nextColor);
